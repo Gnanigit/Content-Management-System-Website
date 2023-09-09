@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Blogy - Hey, we’re Blogy. See our thoughts, stories and ideas.</title>
+  <meta name="title" content="Blogy - Hey, we’re Blogy. See our thoughts, stories and ideas.">
+  <meta name="description" content="This is a blog html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./myblogs.css">
+  
+  <link rel="stylesheet" href="./createblog.css">
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header section" data-header>
+    <div class="container">
+
+     
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="/home" class="navbar-link hover:underline" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link hover:underline" data-nav-link>Recent Blogs</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="/myblogs" class="navbar-link hover:underline" data-nav-link>My Blogs</a>
+          </li>
+
+
+          <li class="navbar-item">
+            <a href="/createblog" class="navbar-link hover:underline" data-nav-link>Write Blog</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="wrapper">
+
+        <button class="search-btn" aria-label="search" data-search-toggler>
+          <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+
+          <span class="span">Search</span>
+        </button>
+
+        <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+          <span class="span one"></span>
+          <span class="span two"></span>
+          <span class="span three"></span>
+        </button>
+
+
+
+      </div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <!-- 
+    - #SEARCH BAR
+  -->
+
+  <div class="search-bar" data-search-bar>
+
+    <div class="input-wrapper">
+      <input type="search" name="search" placeholder="Search" class="input-field">
+
+      <button class="search-close-btn" aria-label="close search bar" data-search-toggler>
+        <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+    </div>
+
+    <p class="search-bar-text">Please enter at least 3 characters</p>
+
+  </div>
+
+  
+      <section class="section recent" aria-label="recent post">
+        <div class="container">
+
+          <div class="title-wrapper">
+
+            <h2 class="h2 section-title">
+              Create a <strong class="strong" style="display: inline;">Blog</strong>
+            </h2>
+
+          </div>
+
+          <ul class="grid-list">
+                <form action="/upload-blog" method="POST">
+                    <input type="text" name="bannerImageUrl" value="" placeholder="Banner Image URL">
+                          <input type="text" name="authorImageUrl" value="" placeholder="Author Image URL">
+
+                    <input type="text" name="tags" value="" placeholder="Tags (comma-separated)">
+                    <input type="text" name="title" value="" placeholder="Title">
+                    <textarea name="content" placeholder="Content" minlength="300"></textarea>
+                    <div class="card-content">
+                      <input type="submit" value="Create Blog"> <!-- Add a submit button to create the blog -->
+                    </div>
+                </form>
+          </ul>
+        </div>
+      </section>
+
+      <footer>
+
+      </footer>
+</body>
+
+</html>
