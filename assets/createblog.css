@@ -1,0 +1,90 @@
+
+body{
+    margin: 0; 
+}
+
+.blog-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 100% of the viewport height */
+}
+
+/* Style for input fields */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none; /* Remove default input outline */
+}
+
+/* Style for the submit button */
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Limit text overflow */
+input[type="text"].limit-text {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100%; /* Adjust this to limit the width */
+}
+
+.hover\:underline { text-underline-offset: 0px; }
+.header {
+    position: relative;
+    padding-block: 10px;
+  }
+  
+.title-wrapper h2{
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+}
+.title-wrapper h2 strong{
+    display: inline-block;
+}
+.grid-list{
+    display: block;
+    margin:0 25vw;
+}
+.div-blog{
+    width: 300px;
+    min-height: 300px;
+    max-height: auto;
+}
+
+body{
+    height: 100vh;
+}
+
+section{
+    height: 70vh;
+    border: none;
+}
+textarea[name="content"]{
+    border: 1px solid #ccc;
+    width: 41vw;
+    height: 20vh;
+    padding: 10px;   
+    outline: none;
+    font-size: 15px;
+    overflow: hidden;
+}
+footer{
+    display: none;
+    border: 0;
+    
+}
